@@ -28,11 +28,12 @@ public class Main {
         li.setLista2(listaB);
 
 
-        System.out.println(Arrays.toString(li.getLista1()));
-        System.out.println(Arrays.toString(li.getLista2()));
+        System.out.println("Lista1 = " + Arrays.toString(li.getLista1()));
+        System.out.println("Lista2 = " + Arrays.toString(li.getLista2()));
 
         li.unionDeListas();
-        li.toString();
+        li.ordenamientoDeLista();
+        System.out.println(li.toString());
     }
 
 }

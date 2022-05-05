@@ -46,21 +46,14 @@ public class Listas {
 
     public int[] unionDeListas(){
         listaF = new int[lista1.length+lista2.length];
-        if(lista1.length > lista2.length){
+
             for (int i = 0; i < lista1.length; i++) {
                 listaF[i] = lista1[i];
             }
+
             for (int i = lista1.length; i < listaF.length; i++) {
                 listaF[i]=lista2[i - lista1.length];
             }
-        } else {
-            for (int i = 0; i < lista2.length; i++) {
-                listaF[i] = lista2[i];
-            }
-            for (int i = lista2.length; i < listaF.length; i++) {
-                listaF[i]=lista1[i - lista2.length];
-            }
-        }
 
         return listaF;
     }
@@ -77,8 +70,7 @@ public class Listas {
 
     @Override
     public String toString() {
-        return "Listas{" +
-                "listaF=" + Arrays.toString(listaF) +
+        return "listaF={" + Arrays.toString(listaF) +
                 '}';
     }
 }
